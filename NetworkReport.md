@@ -5,26 +5,25 @@
 You must inspect your traffic capture to answer the following questions:
 
 1. **What is the domain name of the users' custom site?**
-	The domain name is **frank-n-ted-dc.frank-n-ted.com**
-	Filter: `ip.addr==10.6.12.0/24`
+	- The domain name is **frank-n-ted-dc.frank-n-ted.com**
+		- Filter: `ip.addr==10.6.12.0/24`
 	
-	Screenshot:
+	- Screenshot:
 	<img src="/Images/WireS/FnT-DC.png">
 
 2. What is the IP address of the Domain Controller (DC) of the AD network?
-	The IP address is **10.6.12.12**
-	Screenshot
-	INS HERE
+	- The IP address is **10.6.12.12**
+	
 3. What is the name of the malware downloaded to the 10.6.12.203 machine?
-	Downloaded file **june11.dll**
-	*Filter applied:* 'ipaddr==10.16.12.203 and http.request.method==GET'
+	- Downloaded file **june11.dll**
+		- *Filter applied:* `ipaddr==10.16.12.203 and http.request.method==GET`
 
 	Screenshot:
 	<img src="/Images/WireS/june11.png">
    
 4. What kind of malware is this classified as?
-	This type of malware is flagged as a **TROJAN**.
-	VirusTotal Analysis:
+	- This type of malware is flagged as a **TROJAN**.
+	 - VirusTotal Analysis:
 	<img src="/Images/WireS/virustotal.png">
 
 ---
