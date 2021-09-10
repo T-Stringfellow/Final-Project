@@ -10,7 +10,7 @@ You must inspect your traffic capture to answer the following questions:
 	
 	Screenshot:
 	<img src="/Images/WireS/FnT-DC.png">
-	![Pcap Domain Name](/Images/WireS/FnT-DC.png "Pcap IP address of domain controller")
+
 2. What is the IP address of the Domain Controller (DC) of the AD network?
 	The IP address is **10.6.12.12**
 	Screenshot
@@ -20,13 +20,12 @@ You must inspect your traffic capture to answer the following questions:
 	*Filter applied:* 'ipaddr==10.16.12.203 and http.request.method==GET'
 
 	Screenshot:
-	INS HERE
+	<img src="/Images/WireS/june11.png">
    
-4. Upload the file to [VirusTotal.com](https://www.virustotal.com/gui/). 
-5. What kind of malware is this classified as?
+4. What kind of malware is this classified as?
 	This type of malware is flagged as a **TROJAN**.
 	VirusTotal Analysis:
-	INS HERE
+	<img src="/Images/WireS/virustotal.png">
 
 ---
 
