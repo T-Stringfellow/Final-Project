@@ -23,7 +23,7 @@ You must inspect your traffic capture to answer the following questions:
    
 4. What kind of malware is this classified as?
 	- This type of malware is flagged as a **TROJAN**.
-	 - VirusTotal Analysis:
+		- VirusTotal Analysis:
 	<img src="/Images/WireS/virustotal.png">
 
 ---
