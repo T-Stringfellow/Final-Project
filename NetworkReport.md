@@ -10,7 +10,7 @@ You must inspect your traffic capture to answer the following questions:
 	
 	Screenshot:
 	<img src="/Images/WireS/FnT-DC.png">
-	![Pcap Domain Name](/Images/WireS/FnT-DC.png)
+	![Pcap Domain Name](/Images/WireS/FnT-DC.png "Pcap IP address of domain controller")
 2. What is the IP address of the Domain Controller (DC) of the AD network?
 	The IP address is **10.6.12.12**
 	Screenshot
