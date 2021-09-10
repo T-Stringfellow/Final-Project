@@ -6,10 +6,10 @@ You must inspect your traffic capture to answer the following questions:
 
 1. **What is the domain name of the users' custom site?**
 	The domain name is **frank-n-ted-dc.frank-n-ted.com**
-	Filter: 'ip.addr==10.6.12.0/24'
+	Filter: `ip.addr==10.6.12.0/24`
 	
 	Screenshot:
-	INS HERE
+	![FnT-DC](/Images/FnT-Dc.png)
 2. What is the IP address of the Domain Controller (DC) of the AD network?
 	The IP address is **10.6.12.12**
 	Screenshot
