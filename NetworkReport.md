@@ -53,7 +53,7 @@ You must inspect your traffic capture to answer the following questions:
 4. As a bonus, retrieve the desktop background of the Windows host.
 
 	- Stream between 172.16.4.205 and 185.243.115.84 found POST exchanges without solicited GET interchange revealed the following desktop image sent to 185.243.115.84
-	- DEKTOP IMAGE:
+		- DESKTOP IMAGE:
 	<img src="/Images/WireS/desktop.png">
 
 ---
