@@ -5,7 +5,7 @@
 You must inspect your traffic capture to answer the following questions:
 
 1. **What is the domain name of the users' custom site?**
-	The domain name is **frank-n-ted-dc.frank-n-ted.com
+	The domain name is **frank-n-ted-dc.frank-n-ted.com**
 	Filter: 'ip.addr==10.6.12.0/24'
 	
 	Screenshot:
