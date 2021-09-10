@@ -40,12 +40,12 @@ You must inspect your traffic capture to answer the following questions:
 	- Windows user is **matthijs.devries**
 	
 	- *kerberos.CNameString* applied as column filter to trace user name
-	Screenshot:
+	- Screenshot:
 	<img src="/Images/WireS/matth.png">
 
 3. What are the IP addresses used in the actual infection traffic?
 	- The infected host machine **ROTTERDAM-PC (172.16.4.205)** was found to have an abnormal large amount of packet transfer with outside IP **185.243.115.84** suggesting this latter IP as an infection traffic avenue. 
-		- Following the conversation statistics from **172.16.4.205** revealed the **185.243.115.84* IP as a warranting further investigation.
+		- Following the conversation statistics from **172.16.4.205** revealed the **185.243.115.84** IP as a warranting further investigation.
 
 	- Screenshot
 	<img src="/Images/WireS/conversation.png">
@@ -65,7 +65,7 @@ You must inspect your traffic capture to answer the following questions:
     - Windows username: **elmer.blanco**
     - OS version: **Windows NT 10.0 x64**
 
-	- Filter Used: `ip.addr==10.0.0.201 and kerberos.CNameString`
+		- Filter Used: `ip.addr==10.0.0.201 and kerberos.CNameString`
 
 	- Screenshot:
 	<img src="/Images/WireS/elmer.png">
