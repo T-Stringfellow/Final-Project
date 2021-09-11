@@ -48,7 +48,7 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
 
 
 <img src="/Images/wpscan-users.png">
-<img src="/Images/flag1.png">
+
 
 	2. Targeting user Michael *(Weak user credentials // lack of robust password policy)*
     	- Brief manual Brute Force attack to guessMichael’s password
