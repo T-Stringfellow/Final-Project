@@ -27,7 +27,7 @@ This scan identifies the services below as potential points of entry:
 The following vulnerabilities were identified on each target:
 - Target 1
   1. **PORT ENUMERATION** (Severity: MEDIUM)
-	- Target1 is open and responsive to ping requests allow map enumeration
+	- Target1 is open and responsive to ping requests allow port enumeration
   2. **WEAK PASSWORD POLICY** (Severity HIGH)
 	- User 'Michael' was able to use their username as password, no numerical or spacial characters were required.
 	- OpenSSH was not configured to require further authentication beyond a simple password

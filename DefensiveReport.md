@@ -8,21 +8,14 @@
 - Suggestions for Going Further
 
 ### Network Topology
-_TODO: Fill out the information below._
 
 The following machines were identified on the network:
 - Target 1
   - **Linux Debian 3.16**:
   - **Apache Web Server (WordPress)**:
   - **192.168.1.110**:
-- Name of VM 2
-  - **Operating System**:
-  - **Purpose**:
-  - **IP Address**:
-- Etc.
 
 ### Description of Targets
-_TODO: Answer the questions below._
 
 The target of this attack was: `Target 1` (192.168.1.110).
 
@@ -32,8 +25,7 @@ Target 1 is an Apache web server and has SSH enabled, so ports 80 and 22 are pos
 
 Traffic to these services should be carefully monitored. To this end, we have implemented the alerts below:
 
-####HTTP Request Size Monitor
-_TODO: Replace `Alert 1` with the name of the alert._
+#### HTTP Request Size Monitor
 
 HTTP Request Size Monitor is implemented as follows:
 
@@ -64,47 +56,24 @@ CPU Usage Monitor is implemented as follows:
   - **Vulnerability Mitigated**: Malicious software/programs (I.e. malware or virus programs) consuming host resources.
   - **Reliability**: HIGH: This alert is guaranteed to enumerate malicious software, additionally any non-malware based excessive CPU consumption has logistical implications and should be addressed in all circumstances. 
 
-_TODO Note: Explain at least 3 alerts. Add more if time allows._
 
 ### Suggestions for Going Further (Optional)
-_TODO_: 
-- Each alert above pertains to a specific vulnerability/exploit. Recall that alerts only detect malicious behavior, but do not stop it. For each vulnerability/exploit identified by the alerts above, suggest a patch. E.g., implementing a blocklist is an effective tactic against brute-force attacks. It is not necessary to explain _how_ to implement each patch.
 
 The logs and alerts generated during the assessment suggest that this network is susceptible to several active threats, identified by the alerts above. In addition to watching for occurrences of such threats, the network should be hardened against them. The Blue Team suggests that IT implement the fixes below to protect the network:
-- Vulnerability 1
-  - **Patch**: TODO: E.g., _install `special-security-package` with `apt-get`_
-  - **Why It Works**: TODO: E.g., _`special-security-package` scans the system for viruses every day_
-**Excessive HTTP Errors**
-- Patch: WordPress Hardening
-    - Implement regular updates to WordPress 
-        - WordPress Core 
-        - PHP version
-        - Plugins
-    - Install security plugin(s)
-        - i.e. Wordfence (adds security functionality)
-    - Disable unused WordPress features and settings like:
-        - WordPress XML-RPC (on by default)
-        - WordPress REST API (on by default)
-    - Block requests to /?author=<number> by configuring web server settings
-    - Remove WordPress logins from being publicly accessible specifically:
-        - /wp-admin 
-        - /wp-login.php
-- Why It Works: 
-    - Regular updates to WordPress, the PHP version and plugins is an easy way to implement patches or fixes to exploits/vulnerabilities.
-    - Depending on the WordPress security plugin it can provide things like:
-        - Malware scans
-        - Firewall
-        - IP options (to monitor/block suspicious traffic)
-    - REST API is used by WPScan to enumerate users
-        - Disabling it will help mitigate WPScan or enumeration in general
-    - XML-RPC uses HTTP as it’s method of data transport
-    - WordPress links (permalinks) can include authors (users)
-        - Blocking request to view the all authors (users) helps mitigate against user enumeration attacks
-    - Removal of public access to WordPress login helps reduce the attack surface
-**CPU Usage Monitor**
-- Patch: Virus or Malware hardening
-    - Add or update to a good antivirus.
-- Why It Works: 
-    - Antivirus programs specialize in removal, detection and overall prevention of malicious threats.
-        - Most modern antivirus typically include an active scan and networking monitoring solutions, allowing for real-time threat mitigation.
+
+ 1. **Excessive HTTP Errors**
+		- **Patch:** WordPress // User Credential Hardening. 
+			- A robust password policy (special characters, numbers, expiration dates) should be implemented to reduce the likelihood of a successful brute force attack. Additionally public key authentication can also be implemented.
+		- **Why it Works:**
+			- A strong password greatly reduces the chances of a successful attack. Public key authentication renders brute force attacks almost impossible.
+    
+ 2. **HTTP REQUEST SIZE**
+  		- **Patch**: Implement and Intrusion Detection System (IDS), or preferably, Intrusion Prevention System (IPS) solution.
+  -		 **Why It Works**: An IDS will monitor the network traffic for signs of an attempted DDoS attack, or attempted delivery of a malicious payload. While the IDS will still require human intervention it is an extremely robust front-line alert system. An IPS, when baselined and configured properly may be able to effectively thwart DDoS attacks without the need for human intervention.
+ 3. **CPU Usage Monitor**
+		- **Patch:** Virus or Malware hardening
+    			- Add or update to a proven antivirus solution.
+		- **Why It Works:** 
+    			- Antivirus programs specialize in removal, detection, and overall prevention of malicious threats.
+       			 - Most commercially available antivirus programs typically include an active scan and networking monitoring solutions, allowing for real-time threat mitigation.
    
