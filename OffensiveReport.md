@@ -42,7 +42,7 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
 - Target 1
   - `flag1.txt`: *b9bbcb33ellb80be759c4e844862482d*
     - **Exploit Used**
-    	1. WPScan *(NAME OF VULNERABILTY)* to enumerate users of the Target 1 WordPress site
+    	1. WPScan to enumerate users of the Target 1 WordPress site
     - Command: 
         - `$ wpscan --url http://192.168.1.110 --enumerate u`
 
@@ -50,7 +50,7 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
 <img src="/Images/wpscan-users.png">
 <img src="/Images/flag1.png">
 
-	2. Targeting user Michael *(Weak user credentials // lack of robust password policy)
+	2. Targeting user Michael *(Weak user credentials // lack of robust password policy)*
     	- Brief manual Brute Force attack to guessMichael’s password
     	- User password was found upon attempting most basic username duplication as password credential.
     	- Password: *michael*
