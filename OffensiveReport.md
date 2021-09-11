@@ -44,14 +44,13 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
     - **Exploit Used**
     	1. WPScan to enumerate users of the Target 1 WordPress site
     - Command: 
-        - `$ wpscan --url http://192.168.1.110 --enumerate u`
+        - `$ wpscan --url http://192.168.1.110/wordpress --enumerate u`
 
 
 <img src="/Images/wpscan-users.png">
 
-
 	2. Targeting user Michael *(Weak user credentials // lack of robust password policy)*
-    	- Brief manual Brute Force attack to guessMichael’s password
+    	- Brief manual Brute Force attack to guess Michael’s password
     	- User password was found upon attempting most basic username duplication as password credential.
     	- Password: *michael*
  	3. SSH in as Michael traversing through directories and files.
