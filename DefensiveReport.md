@@ -68,13 +68,13 @@ The logs and alerts generated during the assessment suggest that this network is
         - A strong password greatly reduces the chances of a successful attack. Public key authentication renders brute force attacks almost impossible.
 
  2. **HTTP REQUEST SIZE**
-- **Patch**: Implement and Intrusion Detection System (IDS), or preferably, Intrusion Prevention System (IPS) solution.
-- **Why It Works**: An IDS will monitor the network traffic for signs of an attempted DDoS attack, or attempted delivery of a malicious payload. While the IDS will still require human intervention it is an extremely robust front-line alert system. An IPS, when baselined and configured properly may be able to effectively thwart DDoS attacks without the need for human intervention.
+    - **Patch**: Implement and Intrusion Detection System (IDS), or preferably, Intrusion Prevention System (IPS) solution.
+    - **Why It Works**: An IDS will monitor the network traffic for signs of an attempted DDoS attack, or attempted delivery of a malicious payload. While the IDS will still require human intervention it is an extremely robust front-line alert system. An IPS, when baselined and configured properly may be able to effectively thwart DDoS attacks without the need for human intervention.
 
  3. **CPU Usage Monitor**
-- **Patch:** Virus or Malware hardening
-    - Add or update to a proven antivirus solution.
-- **Why It Works:** 
-    - Antivirus programs specialize in removal, detection, and overall prevention of malicious threats.
-    - Most commercially available antivirus programs typically include an active scan and networking monitoring solutions, allowing for real-time threat mitigation.
+    - **Patch:** Virus or Malware hardening
+        - Add or update to a proven antivirus solution.
+    - **Why It Works:** 
+        - Antivirus programs specialize in removal, detection, and overall prevention of malicious threats.
+        - Most commercially available antivirus programs typically include an active scan and networking monitoring solutions, allowing for real-time threat mitigation.
    
