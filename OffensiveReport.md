@@ -48,6 +48,7 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
 
 
 <img src="/Images/wpscan-users.png">
+<img src="/Images/Flag1.png">
 
 	2. Targeting user Michael *(Weak user credentials // lack of robust password policy)*
     	- Brief manual Brute Force attack to guess Michael’s password
@@ -89,7 +90,7 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
 - Exploit Used:
     - Unsalted password hash and the use of privilege escalation with Python.
     - Capturing Flag 4: Retrieve user credentials from database, crack password hash with John the Ripper and use Python to gain root privileges.
-        - Once having gained access to the database credentials as Michael from the wp-config.php file, lifting username and password hashes using MySQL was next. 
+        - Once having gained access to the database credentials as Michael from the wp-config.php file, username and password hashes were exported from the MySQL database. 
         - These user credentials are stored in the wp_users table of the wordpress database. The usernames and password hashes were copied/saved to the Kali machine in a file called wp_hashes.txt.
             - Commands:
                 - `mysql -u root -p’R@v3nSecurity’ -h 127.0.0.1` 
@@ -104,7 +105,7 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
             - Command:
                 - `john wp_hashes.txt`
 
-        - <img src="/Images/John-show.png">
+        - <img src="/Images/john-show.png">
 
       	  	- Once Steven’s password hash was cracked, the next step was to open an SSH shell as Steven. Since Steven's account had `sudo` privileges a python script vulnerability was leveraged to gain root access.
            		 - Commands: 
