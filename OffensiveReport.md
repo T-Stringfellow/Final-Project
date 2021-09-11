@@ -25,14 +25,14 @@ This scan identifies the services below as potential points of entry:
 
 The following vulnerabilities were identified on each target:
 - Target 1
-  1. PORT ENUMERATION (Severity: MEDIUM)
-	-Target1 is open and responsive to ping requests allow map enumeration
-  2. WEAK PASSWORD POLICY (Severity HIGH)
+  1. **PORT ENUMERATION** (Severity: MEDIUM)
+	- Target1 is open and responsive to ping requests allow map enumeration
+  2. **WEAK PASSWORD POLICY** (Severity HIGH)
 	- User 'Michael' was able to use their username as password, no numerical or spacial characters were required.
 	- OpenSSH was not configured to require further authentication beyond a simple password
-  3. MISCONFIGURED WEBSITE
+  3. **MISCONFIGURED WEBSITE** (Severity: HIGH)
 	- Sensitive data was found within public-facing source code. In addition password information saved within the MySQL database was unsalted, resulting in easily obtained user credentials.
-  3. PYTHON ESCALATION
+  3. **PYTHON ESCALATION** (Severity: MEDIUM-HIGH)
 	- User Steven's `sudo` privileges were misconfigured allowing for the leverage of a known python script exploit
 
 
@@ -44,7 +44,7 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
     - **Exploit Used**
     	1. WPScan to enumerate users of the Target 1 WordPress site
     - Command: 
-        - `$ wpscan --url http://192.168.1.110/wordpress --enumerate u`
+        - `$ wpscan --url http://192.168.1.110/wordpress --enumerate u`.
 
 
 <img src="/Images/wpscan-users.png">
