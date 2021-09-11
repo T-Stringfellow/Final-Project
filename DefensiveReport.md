@@ -62,10 +62,10 @@ CPU Usage Monitor is implemented as follows:
 The logs and alerts generated during the assessment suggest that this network is susceptible to several active threats, identified by the alerts above. In addition to watching for occurrences of such threats, the network should be hardened against them. The Blue Team suggests that IT implement the fixes below to protect the network:
 
  1. **Excessive HTTP Errors**
-  - **Patch:** WordPress // User Credential Hardening. 
-    - A robust password policy (special characters, numbers, expiration dates) should be implemented to reduce the likelihood of a successful brute force attack. Additionally public key authentication can also be implemented.
-  - **Why it Works:**
-    - A strong password greatly reduces the chances of a successful attack. Public key authentication renders brute force attacks almost impossible.
+    - **Patch:** WordPress // User Credential Hardening. 
+        - A robust password policy (special characters, numbers, expiration dates) should be implemented to reduce the likelihood of a successful brute force attack. Additionally public key authentication can also be implemented.
+    - **Why it Works:**
+        - A strong password greatly reduces the chances of a successful attack. Public key authentication renders brute force attacks almost impossible.
 
  2. **HTTP REQUEST SIZE**
 - **Patch**: Implement and Intrusion Detection System (IDS), or preferably, Intrusion Prevention System (IPS) solution.
