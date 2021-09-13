@@ -15,7 +15,7 @@ The following machines were identified on the network:
   - **Apache Web Server (WordPress)**:
   - **192.168.1.110**:
 
-<img src="net-topology.jpeg">
+<img src="Images/net-topology.jpeg">
 
 ### Description of Targets
 
