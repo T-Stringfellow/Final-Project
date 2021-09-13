@@ -15,6 +15,8 @@ The following machines were identified on the network:
   - **Apache Web Server (WordPress)**:
   - **192.168.1.110**:
 
+<img src="net-topology.jpeg">
+
 ### Description of Targets
 
 The target of this attack was: `Target 1` (192.168.1.110).
