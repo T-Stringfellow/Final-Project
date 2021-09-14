@@ -71,11 +71,11 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
             - `cd /var/www/`
             - `ls -l`
             - `cat flag2.txt`
-                <img src="/Images/flag2.png">
+    <img src="/Images/flag2.png">
 
 ### 3. <ins>**Flag3:**</ins> `afc01ab56b50591e7dccf93122770cd2`
 - Exploit Used:
-    - Viewing the wp-config.php file *(unrestricted file permissions)* revealed both username and password for MySQL database access.
+    - Viewing the <ins>wp-config.php</ins> file *(unrestricted file permissions)* revealed both username and password for MySQL database access.
     - Captured credentials were used to access and investigate the database.
     - Flag 3 was found in wp_posts table in the wordpress database.
         - Commands:
@@ -119,7 +119,7 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
                     - `ls`
                     - `cat flag4.txt`
 
-		- Python Escalate
+        - <ins>Python Escalate</ins>
 			- <img src="/Images/python-escalate.png">
 
-<img src="/Images/flag4.png">
+        <img src="/Images/flag4.png">
