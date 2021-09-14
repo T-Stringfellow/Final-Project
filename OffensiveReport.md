@@ -41,7 +41,7 @@ The following vulnerabilities were identified on each target:
 
 The Red Team was able to penetrate `Target 1` and retrieve the following confidential data:
 
-### 1. <ins>`flag1.txt`: *b9bbcb33ellb80be759c4e844862482d*</ins>
+### 1. <ins>**flag1.txt**:</ins> `b9bbcb33ellb80be759c4e844862482d`
 - **Exploit Used**
         - WPScan to enumerate users of the Target 1 WordPress site
     - Command: 
