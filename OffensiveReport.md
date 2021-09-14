@@ -88,7 +88,7 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
 <img src="/Images/flag3.png">
 
 
-### 4. <ins>**Flag4: `715dea6c055b9fe3337544932f2941ce`**</ins>
+### 4. <ins>**Flag4:** `715dea6c055b9fe3337544932f2941ce`</ins>
 - Exploit Used:
     - Unsalted password hash and the use of privilege escalation with Python.
     - Capturing Flag 4: Retrieve user credentials from database, crack password hash with John the Ripper and use Python to gain root privileges.
