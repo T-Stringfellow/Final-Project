@@ -12,6 +12,6 @@ Final Vulnerability Assessment for CyberSecurity Bootcamp
 - During this phase of the project *WireShark* was used to review network traffic. Several objectives were in place ranging from analyzing normal behavior to isolating and documenting illegal network activity
 
 ## [RED TEAM OPERATIONS - GROUP PRESENTATION](https://github.com/T-Stringfellow/Final-Project/blob/a618cd87b78be7f336f0501ec73c4209b9bfec5c/Offensive-Presentation.pdf) 
-    - While the entirety of the reporting and exploitation arms of the project were completed entirely independently by myself, the final presentation was a collaborative effort to document and share findings with other members of my cohort.
+- While the entirety of the reporting and exploitation arms of the project were completed entirely independently by myself, the final presentation was a collaborative effort to document and share findings with other members of my cohort.
     
 - This Red Team presentation delves into specific techniques and exploits leveraged to gain access to the vulnerable system. Analysis of the techniques used compared to configured alerts is also provided with detail on detection avoidance strategies.
