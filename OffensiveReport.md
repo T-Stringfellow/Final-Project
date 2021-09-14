@@ -57,13 +57,14 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
             - Password: *michael*
 - SSH in as Michael traversing through directories and files.
     - Flag 1 found in var/www/html folder at root in service.html in an HTML comment below the footer.
-    		- Commands:
-        		- `ssh michael@192.168.1.110`
-        		- `pw: michael`
-        		- `cd /var/www/html`
-        		- `ls -l`
-        		- `nano service.html`
-#### <ins>**flag2.txt**: *fc3fd58dcdad9ab23faca6e9a3e581c*</ins>
+        - Commands:
+            - `ssh michael@192.168.1.110`
+            - `pw: michael`
+            - `cd /var/www/html`
+            - `ls -l`
+            - `nano service.html`
+
+#### 2. <ins>**flag2.txt**: *fc3fd58dcdad9ab23faca6e9a3e581c*</ins>
 - **Exploit Used**
       - Same SSH/Directory Traversal exploit for user Michael leveraged in the 1st exploit
       - Simple directory exploration found the 'flag2.txt' file plainly visible in the /var/www/ directory.
