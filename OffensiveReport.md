@@ -48,7 +48,7 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
         - `$ wpscan --url http://192.168.1.110/wordpress --enumerate u`.
 
 
-            - <img src="/Images/wpscan-users.png">
+                <img src="/Images/wpscan-users.png">
                 <img src="/Images/Flag1.png">
 
 - Targeting user Michael *(Weak user credentials // lack of robust password policy)*
@@ -71,7 +71,7 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
             - `cd /var/www/`
             - `ls -l`
             - `cat flag2.txt`
-<img src="/Images/flag2.png">
+                <img src="/Images/flag2.png">
 
 ### 3. <ins>**Flag3:**</ins> `afc01ab56b50591e7dccf93122770cd2`
 - Exploit Used:
@@ -109,8 +109,8 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
 
         - <img src="/Images/john-show.png">
 
-      	  	- Once Steven’s password hash was cracked, the next step was to open an SSH shell as Steven. Since Steven's account had `sudo` privileges a python script vulnerability was leveraged to gain root access.
-           		 - Commands: 
+            - Once Steven’s password hash was cracked, the next step was to open an SSH shell as Steven. Since Steven's account had `sudo` privileges a python script vulnerability was leveraged to gain root access.
+            - Commands: 
                			 - `ssh steven@192.168.1.110`
                			 - `pw:pink84`
                			 - `sudo -l`
