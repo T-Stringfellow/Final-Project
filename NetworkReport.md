@@ -33,12 +33,12 @@ You must inspect your traffic capture to answer the following questions:
 
 ---
 
-## Vulnerable Windows Machine
+## <ins>Vulnerable Windows Machine</ins>
 
 1. Find the following information about the infected Windows machine:
-    - Host name: **ROTTERDAM-PC**
-    - IP address **172.16.4.205**
-    - MAC address **00:59:07:b0:63:a4**
+    - Host name: **<ins>ROTTERDAM-PC</ins>**
+    - IP address **<ins>172.16.4.205</ins>**
+    - MAC address **<ins>00:59:07:b0:63:a4</ins>**
 
     
 2. What is the username of the Windows user whose computer is infected?
@@ -63,7 +63,7 @@ You must inspect your traffic capture to answer the following questions:
 
 ---
 
-## Illegal Downloads
+## <ins>Illegal Downloads</ins>
 
 1. Find the following information about the machine with IP address `10.0.0.201`:
     - MAC address: **<ins>00:16:17:18:66:c8</ins>**
