@@ -73,7 +73,7 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
       - `cat flag2.txt`
 <img src="/Images/flag2.png">
 
-### 3. <ins>**Flag3: afc01ab56b50591e7dccf93122770cd2**</ins>
+### 3. <ins>Flag3: **afc01ab56b50591e7dccf93122770cd2**</ins>
 - Exploit Used:
     - Viewing the wp-config.php file *(unrestricted file permissions)* revealed both username and password for MySQL database access.
     - Captured credentials were used to access and investigate the database.
@@ -88,7 +88,7 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
 <img src="/Images/flag3.png">
 
 
-### 4. <ins>**Flag4: 715dea6c055b9fe3337544932f2941ce**</ins>
+### 4. <ins>**Flag4: `715dea6c055b9fe3337544932f2941ce`**</ins>
 - Exploit Used:
     - Unsalted password hash and the use of privilege escalation with Python.
     - Capturing Flag 4: Retrieve user credentials from database, crack password hash with John the Ripper and use Python to gain root privileges.
