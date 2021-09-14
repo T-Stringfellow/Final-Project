@@ -1,11 +1,11 @@
 # Red Team: Summary of Operations
 
 ## Table of Contents
-- Exposed Services
-- Critical Vulnerabilities
-- Exploitation
+- [Exposed Services](#Exposed-Services)
+- [Critical Vulnerabilities](#Critical-Vulnerabilities)
+- [Exploitation](#Exploitation)
 
-### Exposed Services
+## Exposed Services
 
 Nmap scan results for each machine reveal the below services and OS details:
 
@@ -22,26 +22,26 @@ This scan identifies the services below as potential points of entry:
 5. Port 445/TCP 	Open 	netbios-ssn
 
 
-### Critical Vulnerabilities
+## Critical Vulnerabilities
 
 The following vulnerabilities were identified on each target:
 - Target 1
-  1. **PORT ENUMERATION** (Severity: MEDIUM)
+  1. <ins>**PORT ENUMERATION**</ins> (Severity: MEDIUM)
 	- Target1 is open and responsive to ping requests allow port enumeration
-  2. **WEAK PASSWORD POLICY** (Severity HIGH)
+  2. <ins>**WEAK PASSWORD POLICY**</ins> (Severity HIGH)
 	- User 'Michael' was able to use their username as password, no numerical or spacial characters were required.
 	- OpenSSH was not configured to require further authentication beyond a simple password
-  3. **MISCONFIGURED WEBSITE** (Severity: HIGH)
+  3. <ins>**MISCONFIGURED WEBSITE**</ins> (Severity: HIGH)
 	- Sensitive data was found within public-facing source code. In addition password information saved within the MySQL database was unsalted, resulting in easily obtained user credentials.
-  3. **PYTHON ESCALATION** (Severity: MEDIUM-HIGH)
+  3. <ins>**PYTHON ESCALATION**</ins> (Severity: MEDIUM-HIGH)
 	- User Steven's `sudo` privileges were misconfigured allowing for the leverage of a known python script exploit
 
 
-### Exploitation
+## Exploitation
 
 The Red Team was able to penetrate `Target 1` and retrieve the following confidential data:
 - Target 1
-  - `flag1.txt`: *b9bbcb33ellb80be759c4e844862482d*
+    1. `flag1.txt`: *b9bbcb33ellb80be759c4e844862482d*
     - **Exploit Used**
     	1. WPScan to enumerate users of the Target 1 WordPress site
     - Command: 
@@ -51,11 +51,11 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
 <img src="/Images/wpscan-users.png">
 <img src="/Images/Flag1.png">
 
-	2. Targeting user Michael *(Weak user credentials // lack of robust password policy)*
+    2. Targeting user Michael *(Weak user credentials // lack of robust password policy)*
     	- Brief manual Brute Force attack to guess Michael’s password
     	- User password was found upon attempting most basic username duplication as password credential.
     	- Password: *michael*
- 	3. SSH in as Michael traversing through directories and files.
+    3. SSH in as Michael traversing through directories and files.
     		- Flag 1 found in var/www/html folder at root in service.html in an HTML comment below the footer.
     		- Commands:
         		- `ssh michael@192.168.1.110`
