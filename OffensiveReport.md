@@ -25,11 +25,11 @@ This scan identifies the services below as potential points of entry:
 ## Critical Vulnerabilities
 
 The following vulnerabilities were identified on each target:
-###- Target 1
+### Target 1
   1. <ins>**PORT ENUMERATION**</ins> (Severity: **MEDIUM**)
-	- Target1 is open and responsive to ping requests allow port enumeration
+        - Target1 is open and responsive to ping requests allow port enumeration
   2. <ins>**WEAK PASSWORD POLICY**</ins> (Severity: **HIGH**)
-	- User 'Michael' was able to use their username as password, no numerical or spacial characters were required.
+        - User 'Michael' was able to use their username as password, no numerical or spacial characters were required.
 	- OpenSSH was not configured to require further authentication beyond a simple password
   3. <ins>**MISCONFIGURED WEBSITE**</ins> (Severity: **HIGH**)
         - Sensitive data was found within public-facing source code. In addition password information saved within the MySQL database was unsalted, resulting in easily obtained user credentials.
