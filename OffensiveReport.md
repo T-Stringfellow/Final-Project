@@ -56,7 +56,7 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
     	- User password was found upon attempting most basic username duplication as password credential.
             - Password: *michael*
 - SSH in as Michael traversing through directories and files.
-    - Flag 1 found in var/www/html folder at root in service.html in an HTML comment below the footer.
+    - Flag 1 found in var/www/html folder at root in service.html
         - Commands:
             - `ssh michael@192.168.1.110`
             - `pw: michael`
@@ -64,16 +64,16 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
             - `ls -l`
             - `nano service.html`
 
-### 2. <ins>**flag2.txt**:</ins> `fc3fd58dcdad9ab23faca6e9a3e581c`
+### 2. <ins>**flag2.txt:**</ins> `fc3fd58dcdad9ab23faca6e9a3e581c`
 - **Exploit Used**
     - Same SSH/Directory Traversal exploit for user Michael leveraged in the 1st exploit
-        - Simple directory exploration found the 'flag2.txt' file plainly visible in the /var/www/ directory.
+        - Simple directory exploration found the **'flag2.txt'** file plainly visible in the /var/www/ directory.
             - `cd /var/www/`
             - `ls -l`
             - `cat flag2.txt`
 <img src="/Images/flag2.png">
 
-### 3. <ins>Flag3: **afc01ab56b50591e7dccf93122770cd2**</ins>
+### 3. <ins>**Flag3:**</ins> `afc01ab56b50591e7dccf93122770cd2`
 - Exploit Used:
     - Viewing the wp-config.php file *(unrestricted file permissions)* revealed both username and password for MySQL database access.
     - Captured credentials were used to access and investigate the database.
@@ -88,7 +88,7 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
 <img src="/Images/flag3.png">
 
 
-### 4. <ins>**Flag4:** `715dea6c055b9fe3337544932f2941ce`</ins>
+### 4. <ins>**Flag4:**</ins> `715dea6c055b9fe3337544932f2941ce`
 - Exploit Used:
     - Unsalted password hash and the use of privilege escalation with Python.
     - Capturing Flag 4: Retrieve user credentials from database, crack password hash with John the Ripper and use Python to gain root privileges.
