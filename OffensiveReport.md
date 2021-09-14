@@ -63,7 +63,7 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
         		- `cd /var/www/html`
         		- `ls -l`
         		- `nano service.html`
-  -  **flag2.txt**: *fc3fd58dcdad9ab23faca6e9a3e581c*
+#### <ins>**flag2.txt**: *fc3fd58dcdad9ab23faca6e9a3e581c*</ins>
     - **Exploit Used**
       - Same SSH/Directory Traversal exploit for user Michael leveraged in the 1st exploit
       - Simple directory exploration found the 'flag2.txt' file plainly visible in the /var/www/ directory.
@@ -72,7 +72,7 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
       - `cat flag2.txt`
 <img src="/Images/flag2.png">
 
-- **Flag3: afc01ab56b50591e7dccf93122770cd2**
+#### <ins>**Flag3: afc01ab56b50591e7dccf93122770cd2**</ins>
 - Exploit Used:
     - Viewing the wp-config.php file *(unrestricted file permissions)* revealed both username and password for MySQL database access.
     - Captured credentials were used to access and investigate the database.
@@ -87,7 +87,7 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
 <img src="/Images/flag3.png">
 
 
-- **Flag4: 715dea6c055b9fe3337544932f2941ce**
+#### <ins>**Flag4: 715dea6c055b9fe3337544932f2941ce**</ins>
 - Exploit Used:
     - Unsalted password hash and the use of privilege escalation with Python.
     - Capturing Flag 4: Retrieve user credentials from database, crack password hash with John the Ripper and use Python to gain root privileges.
