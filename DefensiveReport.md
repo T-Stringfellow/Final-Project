@@ -37,7 +37,7 @@ HTTP Request Size Monitor is implemented as follows:
   - **Vulnerability Mitigated**: DoS // Brute Force // Code Injection
   - **Reliability**: MEDIUM: This alert will flag any malicious HHTP attempt but poses a strong potential for false positives. Any large amount of HTTP traffic will result in an error even if the traffic is non-malicious. Human review will ensure filtering of benign alerts.
 
-#### Excessive HTTP Errors
+#### <ins>Excessive HTTP Errors</ins>
 Excessive HTTP Errors is implemented as follows:
 
 `WHEN count() GROUPED OVER top 5 'http.response.status_code' IS ABOVE 400 FOR THE LAST 5 minutes`
