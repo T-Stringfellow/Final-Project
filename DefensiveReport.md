@@ -34,7 +34,7 @@ HTTP Request Size Monitor is implemented as follows:
 
   - **Metric**: HTTP Requests per Minute
   - **Threshold**: 3500 bytes per minutes
-  - **Vulnerability Mitigated**: DoS // Brute Force // Code Injection 
+  - **Vulnerability Mitigated**: DoS // Brute Force // Code Injection
   - **Reliability**: MEDIUM: This alert will flag any malicious HHTP attempt but poses a strong potential for false positives. Any large amount of HTTP traffic will result in an error even if the traffic is non-malicious. Human review will ensure filtering of benign alerts.
 
 ### Excessive HTTP Errors
@@ -52,10 +52,10 @@ CPU Usage Monitor is implemented as follows:
 
 `WHEN max() OF system.process.cpu.total.pct OVER all documents IS ABOVE 0.5 FOR THE LAST 5 minutes`
 
-  - **Metric**: CPU Usage % 
+  - **Metric**: CPU Usage %
   - **Threshold**: Over 0.5
   - **Vulnerability Mitigated**: Malicious software/programs (I.e. malware or virus programs) consuming host resources.
-  - **Reliability**: HIGH: This alert is guaranteed to enumerate malicious software, additionally any non-malware based excessive CPU consumption has logistical implications and should be addressed in all circumstances. 
+  - **Reliability**: HIGH: This alert is guaranteed to enumerate malicious software, additionally any non-malware based excessive CPU consumption has logistical implications and should be addressed in all circumstances.
 
 
 ## Suggestions for Going Further
@@ -63,7 +63,7 @@ CPU Usage Monitor is implemented as follows:
 The logs and alerts generated during the assessment suggest that this network is susceptible to several active threats, identified by the alerts above. In addition to watching for occurrences of such threats, the network should be hardened against them. The Blue Team suggests that IT implement the fixes below to protect the network:
 
 #### 1. **Excessive HTTP Errors**
-    - **Patch:** WordPress // User Credential Hardening. 
+    - **Patch:** WordPress // User Credential Hardening.
         - A robust password policy (special characters, numbers, expiration dates) should be implemented to reduce the likelihood of a successful brute force attack. Additionally public key authentication can also be implemented.
     - **Why it Works:**
         - A strong password greatly reduces the chances of a successful attack. Public key authentication renders brute force attacks almost impossible.
@@ -75,7 +75,6 @@ The logs and alerts generated during the assessment suggest that this network is
 ### 3. **CPU Usage Monitor**
     - **Patch:** Virus or Malware hardening
         - Add or update to a proven antivirus solution.
-    - **Why It Works:** 
+    - **Why It Works:**
         - Antivirus programs specialize in removal, detection, and overall prevention of malicious threats.
         - Most commercially available antivirus programs typically include an active scan and networking monitoring solutions, allowing for real-time threat mitigation.
-   
