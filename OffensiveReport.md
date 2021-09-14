@@ -14,7 +14,8 @@ Nmap scan results for each machine reveal the below services and OS details:
 - <img src="/Images/NMAP-scan.png">
 
 This scan identifies the services below as potential points of entry:
-**Target 1**
+
+- **Target 1**
 1. Port 22/TCP 	Open 	SSH
 2. Port 80/TCP 	Open 	HTTP
 3. Port 111/TCP 	Open 	rcpbind
