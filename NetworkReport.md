@@ -1,5 +1,10 @@
 # Network Forensic Analysis Report
 
+## Table of Contents
+- [Time Thieves](#Time-Thieves)
+- [Vulnerable Windows Machine](#Vulnerable-Windows-Machine)
+- [Illegal Downloads](#Illegal-Downloads)
+
 
 ## Time Thieves 
 You must inspect your traffic capture to answer the following questions:
