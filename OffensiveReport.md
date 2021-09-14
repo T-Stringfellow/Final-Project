@@ -41,8 +41,8 @@ The following vulnerabilities were identified on each target:
 
 The Red Team was able to penetrate `Target 1` and retrieve the following confidential data:
 - Target 1
-    1. `flag1.txt`: *b9bbcb33ellb80be759c4e844862482d*
-    - **Exploit Used**
+#### <ins>`flag1.txt`: *b9bbcb33ellb80be759c4e844862482d*</ins>
+1. **Exploit Used**
     	1. WPScan to enumerate users of the Target 1 WordPress site
     - Command: 
         - `$ wpscan --url http://192.168.1.110/wordpress --enumerate u`.
@@ -55,7 +55,7 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
     	- Brief manual Brute Force attack to guess Michael’s password
     	- User password was found upon attempting most basic username duplication as password credential.
     	- Password: *michael*
-    3. SSH in as Michael traversing through directories and files.
+3. SSH in as Michael traversing through directories and files.
     		- Flag 1 found in var/www/html folder at root in service.html in an HTML comment below the footer.
     		- Commands:
         		- `ssh michael@192.168.1.110`
