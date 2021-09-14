@@ -26,7 +26,7 @@ Target 1 is an Apache web server and has SSH enabled, so ports 80 and 22 are pos
 
 Traffic to these services should be carefully monitored. To this end, we have implemented the alerts below:
 
-###    1. HTTP Request Size Monitor
+    ###    1. HTTP Request Size Monitor
 
 HTTP Request Size Monitor is implemented as follows:
 
