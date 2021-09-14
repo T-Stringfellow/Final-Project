@@ -77,7 +77,7 @@ You must inspect your traffic capture to answer the following questions:
 
 2. Which torrent file did the user download?
 
-	- Torrent file was **Betty_Boop_Rthythm_on_the_Reservation.avi.torrent**
+	- Torrent file was **<ins>Betty_Boop_Rthythm_on_the_Reservation.avi.torrent</ins>**
 
 		- Filter used: `ip.addr=10.0.0.201 and http.request.method==GET`
  	- Screenshot:
