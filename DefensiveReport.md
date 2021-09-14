@@ -26,7 +26,7 @@ Target 1 is an Apache web server and has SSH enabled, so ports 80 and 22 are pos
 
 Traffic to these services should be carefully monitored. To this end, we have implemented the alerts below:
 
-#### 1. HTTP Request Size Monitor
+#### <ins>HTTP Request Size Monitor</ins>
 
 HTTP Request Size Monitor is implemented as follows:
 
@@ -47,7 +47,7 @@ Excessive HTTP Errors is implemented as follows:
   - **Vulnerability Mitigated**: Enumeration // Brute Force
   - **Reliability**: HIGH: The alert is highly reliable as measuring by error codes 400 and above will filter out any normal or successful responses. Further isolating high frequencies of error code responses will help highlight a potential attack.
 
-### <ins>CPU Usage Monitor</ins>
+#### <ins>CPU Usage Monitor</ins>
 CPU Usage Monitor is implemented as follows:
 
 `WHEN max() OF system.process.cpu.total.pct OVER all documents IS ABOVE 0.5 FOR THE LAST 5 minutes`
