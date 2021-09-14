@@ -2,10 +2,10 @@
 
 ## Table of Contents
 - [Network Topology](#Network-Topology)
-- Description of Targets
-- Monitoring the Targets
-- Patterns of Traffic & Behavior
-- Suggestions for Going Further
+- [Description of Targets](#Description-of-Targets)
+- [Monitoring the Targets](#Monitoring-the-Targets)
+- [Patterns of Traffic & Behavior](#Patterns-of-Traffic-&-Behavior)
+- [Suggestions for Going Further](#Suggestions-for-Going-Further)
 
 ## Network Topology
 
