@@ -68,9 +68,9 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
 - **Exploit Used**
     - Same SSH/Directory Traversal exploit for user Michael leveraged in the 1st exploit
         - Simple directory exploration found the 'flag2.txt' file plainly visible in the /var/www/ directory.
-      - `cd /var/www/`
-      - `ls -l`
-      - `cat flag2.txt`
+            - `cd /var/www/`
+            - `ls -l`
+            - `cat flag2.txt`
 <img src="/Images/flag2.png">
 
 ### 3. <ins>Flag3: **afc01ab56b50591e7dccf93122770cd2**</ins>
