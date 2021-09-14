@@ -7,7 +7,7 @@
 - Patterns of Traffic & Behavior
 - Suggestions for Going Further
 
-### Network Topology
+## Network Topology
 
 The following machines were identified on the network:
 - Target 1
@@ -17,7 +17,7 @@ The following machines were identified on the network:
 
 <img src="/Images/net-topology.png">
 
-### Description of Targets
+## Description of Targets
 
 The target of this attack was: `Target 1` (192.168.1.110).
 
