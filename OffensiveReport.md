@@ -42,8 +42,8 @@ The following vulnerabilities were identified on each target:
 The Red Team was able to penetrate `Target 1` and retrieve the following confidential data:
 - Target 1
 #### <ins>`flag1.txt`: *b9bbcb33ellb80be759c4e844862482d*</ins>
-**Exploit Used**
-    	1. WPScan to enumerate users of the Target 1 WordPress site
+- **Exploit Used**
+1. WPScan to enumerate users of the Target 1 WordPress site
     - Command: 
         - `$ wpscan --url http://192.168.1.110/wordpress --enumerate u`.
 
