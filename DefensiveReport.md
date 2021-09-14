@@ -69,11 +69,11 @@ The logs and alerts generated during the assessment suggest that this network is
 - **Why it Works:**
     - A strong password greatly reduces the chances of a successful attack. Public key authentication renders brute force attacks almost impossible.
 
-### 2. **HTTP REQUEST SIZE**
+### 2. <ins>**HTTP REQUEST SIZE**</ins>
 - **Patch**: Implement and Intrusion Detection System (IDS), or preferably, Intrusion Prevention System (IPS) solution.
 - **Why It Works**: An IDS will monitor the network traffic for signs of an attempted DDoS attack, or attempted delivery of a malicious payload. While the IDS will still require human intervention it is an extremely robust front-line alert system. An IPS, when baselined and configured properly may be able to effectively thwart DDoS attacks without the need for human intervention.
 
-### 3. **CPU Usage Monitor**
+### 3. <ins>**CPU Usage Monitor**</ins>
 - **Patch:** Virus or Malware hardening
     - Add or update to a proven antivirus solution.
 - **Why It Works:**
