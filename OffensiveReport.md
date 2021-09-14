@@ -54,9 +54,9 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
 - Targeting user Michael *(Weak user credentials // lack of robust password policy)*
     - Brief manual Brute Force attack to guess Michael’s password
     	- User password was found upon attempting most basic username duplication as password credential.
-    	- Password: *michael*
-3. SSH in as Michael traversing through directories and files.
-    		- Flag 1 found in var/www/html folder at root in service.html in an HTML comment below the footer.
+            - Password: *michael*
+- SSH in as Michael traversing through directories and files.
+    - Flag 1 found in var/www/html folder at root in service.html in an HTML comment below the footer.
     		- Commands:
         		- `ssh michael@192.168.1.110`
         		- `pw: michael`
