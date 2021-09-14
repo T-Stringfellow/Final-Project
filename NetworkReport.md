@@ -17,7 +17,7 @@ You must inspect your traffic capture to answer the following questions:
 	<img src="/Images/WireS/FnT-DC.png">
 
 2. What is the IP address of the Domain Controller (DC) of the AD network?
-	- The IP address is `**10.6.12.12**`
+	- The IP address is **`10.6.12.12`**
 	
 3. What is the name of the malware downloaded to the 10.6.12.203 machine?
 	- Downloaded file `**june11.dll**`
