@@ -66,7 +66,7 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
 
 ### 2. <ins>**flag2.txt**:</ins> `fc3fd58dcdad9ab23faca6e9a3e581c`
 - **Exploit Used**
-- Same SSH/Directory Traversal exploit for user Michael leveraged in the 1st exploit
+    - Same SSH/Directory Traversal exploit for user Michael leveraged in the 1st exploit
     - Simple directory exploration found the 'flag2.txt' file plainly visible in the /var/www/ directory.
       - `cd /var/www/`
       - `ls -l`
