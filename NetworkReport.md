@@ -67,8 +67,8 @@ You must inspect your traffic capture to answer the following questions:
 
 1. Find the following information about the machine with IP address `10.0.0.201`:
     - MAC address: **<ins>00:16:17:18:66:c8</ins>**
-    - Windows username: **`elmer.blanco`**
-    - OS version: **Windows NT 10.0 x64**
+    - Windows username: **<ins>elmer.blanco</ins>**
+    - OS version: **<ins>Windows NT 10.0 x64</ins>**
 
 		- Filter Used: `ip.addr==10.0.0.201 and kerberos.CNameString`
 
