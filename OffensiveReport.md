@@ -32,16 +32,16 @@ The following vulnerabilities were identified on each target:
 	- User 'Michael' was able to use their username as password, no numerical or spacial characters were required.
 	- OpenSSH was not configured to require further authentication beyond a simple password
   3. <ins>**MISCONFIGURED WEBSITE**</ins> (Severity: **HIGH**)
-	- Sensitive data was found within public-facing source code. In addition password information saved within the MySQL database was unsalted, resulting in easily obtained user credentials.
-  3. <ins>**PYTHON ESCALATION**</ins> (Severity: **MEDIUM-HIGH**)
-	- User Steven's `sudo` privileges were misconfigured allowing for the leverage of a known python script exploit
+        - Sensitive data was found within public-facing source code. In addition password information saved within the MySQL database was unsalted, resulting in easily obtained user credentials.
+  4. <ins>**PYTHON ESCALATION**</ins> (Severity: **MEDIUM-HIGH**)
+        - User Steven's `sudo` privileges were misconfigured allowing for the leverage of a known python script exploit
 
 
 ## Exploitation
 
 The Red Team was able to penetrate `Target 1` and retrieve the following confidential data:
 
-### 1. <ins>**flag1.txt**:</ins> `b9bbcb33ellb80be759c4e844862482d`
+### 1. <ins>**Flag1.txt**:</ins> `b9bbcb33ellb80be759c4e844862482d`
 - **Exploit Used**
         - WPScan to enumerate users of the Target 1 WordPress site
     - Command: 
@@ -64,7 +64,7 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
             - `ls -l`
             - `nano service.html`
 
-### 2. <ins>**flag2.txt:**</ins> `fc3fd58dcdad9ab23faca6e9a3e581c`
+### 2. <ins>**Flag2.txt:**</ins> `fc3fd58dcdad9ab23faca6e9a3e581c`
 - **Exploit Used**
     - Same SSH/Directory Traversal exploit for user Michael leveraged in the 1st exploit
         - Simple directory exploration found the **'flag2.txt'** file plainly visible in the /var/www/ directory.
