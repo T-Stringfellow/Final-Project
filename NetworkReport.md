@@ -10,7 +10,7 @@
 You must inspect your traffic capture to answer the following questions:
 
 1. **What is the domain name of the users' custom site?**
-	- The domain name is **frank-n-ted-dc.frank-n-ted.com**
+	- The domain name is <ins>**frank-n-ted-dc.frank-n-ted.com**</ins>
 		- Filter: `ip.addr==10.6.12.0/24`
 	
 	- Screenshot:
@@ -20,7 +20,7 @@ You must inspect your traffic capture to answer the following questions:
 	- The IP address is **`10.6.12.12`**
 	
 3. What is the name of the malware downloaded to the 10.6.12.203 machine?
-	- Downloaded file `**june11.dll**`
+	- Downloaded file `****june11.dll`**
 		- *Filter applied:* `ipaddr==10.16.12.203 and http.request.method==GET`
 
 	Screenshot:
