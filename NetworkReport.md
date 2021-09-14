@@ -6,7 +6,7 @@
 - [Illegal Downloads](#Illegal-Downloads)
 
 
-## Time Thieves 
+## <ins>Time Thieves</ins> 
 You must inspect your traffic capture to answer the following questions:
 
 1. **What is the domain name of the users' custom site?**
